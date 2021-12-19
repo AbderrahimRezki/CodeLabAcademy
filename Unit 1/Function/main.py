@@ -34,7 +34,6 @@ def sumLs(ls):
   return count
 
 def maxOfThree(a, b, c):
-  m = a
-  if b > m: m = b
-  if c > m: m = c
-  
+  if b > a: a = b
+  if c > a: a = c
+  return a

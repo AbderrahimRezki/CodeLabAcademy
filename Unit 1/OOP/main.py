@@ -13,8 +13,7 @@ class Vehicle:
     self.mileage = mileage
 
 class Bus(Vehicle):
-  def __init__(self, max_speed=200, mileage=0):
-    super().__init__(max_speed, mileage)
+  pass
 
 """
 Empty Vehicle Class

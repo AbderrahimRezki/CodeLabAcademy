@@ -16,7 +16,7 @@ with open('students_names.txt', 'r') as f:                                      
     for i in range(n):
         print(f.readline().strip())
 
-with open('students_names.txt', 'r') as f:                                      # TASK 3: Print last N names
+with open('students_names.txt', 'r') as f:                                      # TASK 4: Print last N names
     n = int(input('Enter the number of lines to show (from the end): '))
     lines = f.readlines()
     if n > len(lines): n = len(lines)
@@ -26,11 +26,11 @@ with open('students_names.txt', 'r') as f:                                      
 
 with open('students_names.txt', 'r') as f:
   name = input('Enter a name to check if it is in the file: ')
-  isInFile = name in f.read()                                                   # TASK 4: Check name in file
+  isInFile = name in f.read()                                                   # TASK 5: Check name in file
   print("The name exists in the file: ", isInFile)
 
 
 start = ord("A")
-for i in range(26):                                                             # TASK 5: Generating files
+for i in range(26):                                                             # TASK 6: Generating files
   f = open(f'{chr(i+start)}.txt', 'w')
   f.close()
